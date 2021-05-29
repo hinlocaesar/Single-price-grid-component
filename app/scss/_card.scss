@@ -1,0 +1,25 @@
+.container{
+
+    @media only screen and (min-width: 375px) {
+        display: grid;
+        grid-template-areas: "join join"
+        "sub  why";
+      }
+
+ 
+    &__join{
+        grid-area: join;
+        background-color: yellow;
+    }
+
+    &__sub{
+        grid-area: sub;
+        background-color: red;
+    }
+
+    &__why{
+        grid-area: why;
+        background-color: blue;
+    }
+}
+

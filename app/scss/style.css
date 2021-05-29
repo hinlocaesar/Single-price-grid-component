@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 375px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "join join" "sub  why";
+  }
+}
+
+.container__join {
+  grid-area: join;
+  background-color: yellow;
+}
+
+.container__sub {
+  grid-area: sub;
+  background-color: red;
+}
+
+.container__why {
+  grid-area: why;
+  background-color: blue;
+}
+/*# sourceMappingURL=style.css.map */
