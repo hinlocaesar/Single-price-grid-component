@@ -1,9 +1,23 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-@media only screen and (min-width: 375px) {
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.padding {
+  padding-top: 2.25rem;
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+@media only screen and (min-width: 23.5rem) {
   .container {
     display: -ms-grid;
     display: grid;
@@ -14,15 +28,18 @@
 .container__join {
   grid-area: join;
   background-color: yellow;
+  min-width: 19.5rem;
 }
 
 .container__sub {
   grid-area: sub;
   background-color: red;
+  min-width: 19.5rem;
 }
 
 .container__why {
   grid-area: why;
   background-color: blue;
+  min-width: 19.5rem;
 }
 /*# sourceMappingURL=style.css.map */

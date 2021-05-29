@@ -1,25 +1,30 @@
 .container{
+ 
 
-    @media only screen and (min-width: 375px) {
+    @media only screen and (min-width: 23.5rem) {
         display: grid;
         grid-template-areas: "join join"
         "sub  why";
+ 
       }
 
  
     &__join{
         grid-area: join;
         background-color: yellow;
+        min-width:19.5rem;
     }
 
     &__sub{
         grid-area: sub;
         background-color: red;
+        min-width:19.5rem;
     }
 
     &__why{
         grid-area: why;
         background-color: blue;
+        min-width:19.5rem;
     }
 }
 
