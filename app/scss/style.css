@@ -10,6 +10,10 @@
           box-sizing: inherit;
 }
 
+body {
+  background-color: grey;
+}
+
 .padding {
   padding-top: 2.25rem;
   padding-left: 2.25rem;
@@ -17,29 +21,47 @@
   padding-bottom: 2.25rem;
 }
 
-@media only screen and (min-width: 23.5rem) {
+.container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 415px) {
   .container {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "join join" "sub  why";
+    -ms-grid-columns: minmax(318px, 318px) minmax(318px, 318px);
+        grid-template-columns: minmax(318px, 318px) minmax(318px, 318px);
+    -ms-grid-rows: minmax(222px, 222px) minmax(261px, 261px);
+        grid-template-rows: minmax(222px, 222px) minmax(261px, 261px);
   }
 }
 
 .container__join {
-  grid-area: join;
-  background-color: yellow;
-  min-width: 19.5rem;
+  background-color: white;
+  padding-top: 36px;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-bottom: 36px;
+  grid-column: 1/-1;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
 }
 
 .container__sub {
-  grid-area: sub;
-  background-color: red;
-  min-width: 19.5rem;
+  background-color: #2BB3B1;
+  padding-top: 36px;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-bottom: 36px;
 }
 
 .container__why {
-  grid-area: why;
-  background-color: blue;
-  min-width: 19.5rem;
+  background-color: #41BEBD;
+  padding-top: 36px;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-bottom: 36px;
 }
 /*# sourceMappingURL=style.css.map */

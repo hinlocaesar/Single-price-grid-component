@@ -1,0 +1,26 @@
+Q-can you set all height of a item in a grid container?
+ANS: set the grid-template-rows: you can set height their using any units or minmax() prperty
+
+Q-how to set maximum and minimum width and height of a container?
+ANS: use the minmax() property to set minimum and maxim of an item
+
+
+Q)how to specifically play item 2 and 3 to second row and they occupy bigger space than row 1?
+ANS)use grid-column-start, grid-column-end or grid column to set stand point of consumption 
+     eg)grid-column: 2/-1;
+
+
+Q) how to implement space between.
+
+Q) what is grid-auto rows or grid-auto columns?
+ANS: other ways of spcifiyung width of 
+
+
+
+Q) cal you apply position abpokute to a grid item?\\
+ANS: Yes you can apply.
+
+Q) test how to handle content that overflow item in a gridh
+
+
+Q) how many px is 1fr

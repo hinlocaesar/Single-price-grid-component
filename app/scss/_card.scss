@@ -1,30 +1,47 @@
 .container{
- 
+    display:grid;
+    justify-content: center;
 
-    @media only screen and (min-width: 23.5rem) {
-        display: grid;
-        grid-template-areas: "join join"
-        "sub  why";
- 
+
+    @media only screen and (min-width: 415px) {
+        grid-template-columns: minmax(318px,318px) minmax(318px,318px);
+        grid-template-rows: minmax(222px,222px) minmax(261px,261px);
       }
 
- 
+
     &__join{
-        grid-area: join;
-        background-color: yellow;
-        min-width:19.5rem;
+        background-color: white;
+        padding-top: 36px;
+        padding-left: 36px;
+        padding-right: 36px;
+        padding-bottom: 36px;
+     
+
+
+        
+        grid-column: 1/-1;
+        grid-row: 1/1;
+
+
     }
 
     &__sub{
-        grid-area: sub;
-        background-color: red;
-        min-width:19.5rem;
+        background-color: #2BB3B1;
+        padding-top: 36px;
+        padding-left: 36px;
+        padding-right: 36px;
+        padding-bottom: 36px;
+
+  
     }
 
     &__why{
-        grid-area: why;
-        background-color: blue;
-        min-width:19.5rem;
+        background-color:#41BEBD;
+        padding-top: 36px;
+        padding-left: 36px;
+        padding-right: 36px;
+        padding-bottom: 36px;
+
     }
 }
 
