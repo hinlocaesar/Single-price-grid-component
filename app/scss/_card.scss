@@ -1,16 +1,19 @@
 .container{
     display:grid;
+    justify-content: center;
+    align-content: start;
+    height: 100vh;
 
 
-    @media only screen and (min-width: 415px) {
+    @media only screen and (min-width: 501px) {
         grid-template-columns: minmax(318px,318px) minmax(318px,318px);
         grid-template-rows: minmax(222px,222px) minmax(261px,261px);
-      }
+        align-content: center;
+    }
 
 
     &__join{
         background-color: white;
-
         grid-column: 1/-1;
         grid-row: 1/1;
 
@@ -36,7 +39,7 @@
     &__sub{
         background-color: #2BB3B1;
         color:$LightGray;
-
+     
         &__title{
             padding-bottom: 30px;
             font-weight:bold;
@@ -47,16 +50,37 @@
             padding-bottom: 30px;
             font-weight:bold;
             font-size:30px; 
+
         }
 
-  
+        &__month{
+            padding-bottom: 13px;
+            color:$LightGray;
+        }
+
+        &__fullaccess{
+            padding-bottom: 30px;
+            color:$LightGray;
+        }
+
+        &__signupbtn{
+            border-radius: 5px;
+            background-color: #BFDF32;
+            color:white;
+            font-weight: bold;
+
+            padding-top: 18px;
+            padding-bottom: 18px;
+            text-align: center;
+
+            box-shadow: 5px 10px 10px -5px  rgba(0,0,0,0.3);;
+        }
     }
 
     &__why{
         background-color:#41BEBD;
         color:$LightGray;
         padding-right:120px;
-      
 
         &__title{
             padding-bottom: 30px;
@@ -67,9 +91,7 @@
         &__desc{
             font-size:15px; 
         }
-
-
-
     }
 }
+
 
