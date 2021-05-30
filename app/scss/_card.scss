@@ -1,6 +1,5 @@
 .container{
     display:grid;
-    justify-content: center;
 
 
     @media only screen and (min-width: 415px) {
@@ -11,36 +10,65 @@
 
     &__join{
         background-color: white;
-        padding-top: 36px;
-        padding-left: 36px;
-        padding-right: 36px;
-        padding-bottom: 36px;
-     
 
-
-        
         grid-column: 1/-1;
         grid-row: 1/1;
 
+        &__community{
+            color:#2BB3B1;
+            font-weight: bolder;
+            font-size:19px;
+            padding-bottom: 30px;
+        }
+
+        &__guarantee{
+            color:#BFD432;
+            font-weight: bolder;
+            padding-bottom: 30px;
+        }
+
+        &__access{
+            color: $GrayishBlue;
+        }
 
     }
 
     &__sub{
         background-color: #2BB3B1;
-        padding-top: 36px;
-        padding-left: 36px;
-        padding-right: 36px;
-        padding-bottom: 36px;
+        color:$LightGray;
+
+        &__title{
+            padding-bottom: 30px;
+            font-weight:bold;
+            font-size:20px; 
+        }
+
+        &__price{
+            padding-bottom: 30px;
+            font-weight:bold;
+            font-size:30px; 
+        }
 
   
     }
 
     &__why{
         background-color:#41BEBD;
-        padding-top: 36px;
-        padding-left: 36px;
-        padding-right: 36px;
-        padding-bottom: 36px;
+        color:$LightGray;
+        padding-right:120px;
+      
+
+        &__title{
+            padding-bottom: 30px;
+            font-weight:bold;
+            font-size:20px; 
+        }
+
+        &__desc{
+            font-size:15px; 
+        }
+
+
 
     }
 }
