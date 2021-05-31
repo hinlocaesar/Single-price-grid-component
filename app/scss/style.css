@@ -126,6 +126,16 @@ body {
   text-align: center;
   -webkit-box-shadow: 5px 10px 10px -5px rgba(0, 0, 0, 0.3);
           box-shadow: 5px 10px 10px -5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  /* Animation */
+}
+
+.container__sub__signupbtn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .container__why {

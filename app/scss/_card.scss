@@ -74,6 +74,13 @@
             text-align: center;
 
             box-shadow: 5px 10px 10px -5px  rgba(0,0,0,0.3);;
+
+            transition: transform .2s; /* Animation */
+
+            &:hover{
+                transform: scale(1.1); 
+                
+            }
         }
     }
 
